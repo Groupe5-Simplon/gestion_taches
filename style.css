@@ -1,0 +1,17 @@
+/* Styles CSS pour le tableau */
+
+.table-container {
+    margin: 100px auto;
+    
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid #eb7d7d;
+    padding: 10px;
+    text-align: center;
+}
