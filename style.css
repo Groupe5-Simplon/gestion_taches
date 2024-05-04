@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0px;
     padding: 0px;
     background-color: rgb(231, 240, 240);
@@ -67,4 +67,82 @@ body {
     
   }
   
-  
+   */
+   body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+h1{
+    margin: 0;
+}
+button{
+    background-color: cadetblue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(112, 170, 172);
+}
+.model{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.model-content{
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solide #888;
+    width: 80%;
+}
+.close{
+    color: #333;
+    float: right;
+    font-size: 28px;
+    font-weight : bold ;
+}
+.close:hover,.close:focus {
+    color: black;
+    background-color: red;
+    width: 20px;
+    height: 29px;
+    padding-left: 5px;
+    padding-right: 4px;
+    cursor: pointer;
+}
+table{
+    text-align: center;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 30vh;
+    border-collapse: collapse;
+}
+th{
+    border: 1px solid black;
+}
+td {
+    background-color: gray;
+    color: white;  
+    font-weight: bold; 
+}
+.ion-icon{
+    font-size: 25px;
+    font-weight: bold;
+    background: white;
+    color: black;
+}

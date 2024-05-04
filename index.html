@@ -8,29 +8,35 @@
 </head>
 <body>
 
-  <div class="container">
-    <h1>Formulaire de Gestion des Taches</h1>
-    <form action="#" method="POST">
-        <div class="form-group">
-          <div class="tt"> 
-            <input type="text" placeholder="Titre de la tache" required>
-            </div>
-            <div class="dt"> 
-            <textarea placeholder="Description de la tache" required></textarea>
-            </div>
-            <div class="date"> 
-            <input type="date" required>
-            <select required>
-            <option value="Faible">Faible</option>
-            <option value="En cours">En cours</option>
-            <option value="Termine">Termine</option>
-          </div>
+  <header>
+    <h1>Liste de Tache</h1>
+    <button id="addTaskBtn">Ajouter une Tache</button>
+</header>
+<div id="taskModel" class="model">
+    <div class="model-content">
+        <span class="close">&times;</span>
+        <h1>Ajouter une Tache</h1>
+        <form id="taskForm">
+            <label for="title">Titre :</label>
+            <input type="text" id="title" name="title" required>
+            <label for="description">Description :</label>
+            <textarea name="description" id="description" cols="30" rows="3"></textarea>
+            <label for="deadline">Date Limite :</label>
+            <input type="Date" id="deadline" name="deadline" required>
+            <label for="priority">Priorité</label>
+            <select name="priority" id="priority">
+                <option value="faible">Faible</option>
+                <option value="moyenne">Moyenne</option>
+                <option value="forte">Forte</option>
             </select>
+            <button type="submit">Ajourter</button>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-            <div class="bouton">
-          <button type="submit">Ajouter une tache</button>
-      </div> 
-   
 
 </body>
 </html>
