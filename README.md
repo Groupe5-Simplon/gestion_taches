@@ -1,0 +1,18 @@
+# Application de gestion de tâches
+
+L'application de gestion de tâches permettra à l'utilisateur d'afficher une liste de tâches triées par ordre croissant en fonction de la date limite, d'ajouter une nouvelle tâche à la liste, d'attribuer une priorité à chaque tâche, de marquer une tâche comme étant terminée, de modifer des détails d'une tâche existante, de consulter des informations détaillées relatives à une tâche.
+
+## Table de matières
+
+- Répertorier une tâche en cliquant sur le bouton "Ajouter une tâche";
+- Ajouter la tâche au tableau en appuyant sur le bouton "Enregister";
+- Appuyer sur l'icône modifier pour modifier une tâche; 
+- Appuyer sur l'icône terminer pour déclarer une tâche comme terminé; 
+
+## Exigences
+
+Ce projet nécessite des compétences en HTML/CSS/JS/GIT/GITHUB.
+
+## Réalisation
+
+Réalisé par Aichetou Gaye, Mbaye Abdoulaye Kalidou, Ethman Ly et Ousmane ly.
