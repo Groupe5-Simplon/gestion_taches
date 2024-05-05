@@ -1,5 +1,4 @@
 const taskModel = document.getElementById('taskModel');
-const taskForm = document.getElementById('taskForm');
 const addTaskBtn = document.getElementById('addTaskBtn');
 const close = document.getElementsByClassName('close')[0];
 
@@ -11,20 +10,32 @@ close.addEventListener('click',function () {
     taskModel.style.display = 'none';
 })
 
-taskForm.addEventListener("click", function (event) {
-    event.preventDefault();
+const form = document.querySelector("form");
+const tbody = document.querySelector("tbody");
+
+function addIt(e) {
+    e.preventDefault();
+    alert('work');
     const titre = document.getElementById('title').value;
-    const description = document.getElementById('description').value;
-    const datel = document.getElementById('deadline').value;
+    const descript = document.getElementById('description').value;
+    const date = document.getElementById('deadline').value;
+    const etat = document.getElementById('etat').value;
     const priorite = document.getElementById('priority').value;
-    if (titre && description && datel && priorite) {
-        let tableau = document.getElementById('tableau').getElementsByTagName('tbody')[0];
-        // tableau.insertRow().innerHTML="<td>"+titre+"</td><td>"+description+"</td><td>"+datel+"</td><td>"+priorite+"</td>"+"<ion-icon name='pencil-outline'>"+"</ion-icon>";
-        tableau.insertRow().innerHTML = "<td>" + titre + "</td><td>" + description + "</td><td>" + datel + "</td><td>" + priorite + "</td><td class=ion-icon><ion-icon name='pencil-outline'></ion-icon></td><td class=ion-icon><ion-icon name='trash-outline'></ion-icon></td>";
-        taskModel.style.display = 'none'
-        taskForm.reset();
-    } else {
-        return;
+    // const row = body.insertRow();
+    const edit = document.createElement('button');
+    edit.innerHTML = '<ion-icon name="pencil-outline"></ion-icon>'
+    edit.onclick = function(){
+        editform(form);
     }
+
+    const done = document.createElement('button');
     
-})
+    done.innerHTML = '<ion-icon name="checkmark-done-circle-outline"></ion-icon>'
+    done.onclick = function(){
+        doneform(form);
+    }
+}
+
+tbody.innerHTML += '`<tr><td>${titre}</td><td>${descript}</td><td>${date}</td><td>${etat}</td><td>${priorite}</td><td><button><ion-icon name="checkmark-done-circle-outline"></ion-icon></button></td><td><button><ion-icon name="create-outline"></ion-icon></button></td></tr>`';
+
+form.addEventListener('submit', addIt);
