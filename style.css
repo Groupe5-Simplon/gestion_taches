@@ -129,8 +129,11 @@ td {
   background : transparent;
   width: 9%;
 }
-.btn{
-  background-color: red;
+.btnM{
+  background-color: rgb(50, 38, 214);
+}
+.btnT{
+  background-color: rgb(37, 154, 84);
 }
 /* 
 .ion-icon{

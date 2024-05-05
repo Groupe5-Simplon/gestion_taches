@@ -59,18 +59,11 @@ function onAdd(e) {
             <td>${datel}</td>
             <td>${priorite}</td>
             <td>${Etat}</td>
-            <td class="g"><button class="btn delet" type="submit">Suprimer</button></td>
-            <td class="g"><button class="btn modi"  type="submit">Modofier</button></td>
+            <td class="g"><button class="btnM modi"  type="submit"><ion-icon name='pencil-outline'>"+"</ion-icon></button></td>
+            <td class="g"><button class="btnT termine" type="submit">Terminer</button></td>
         </tr>
     `
     taskForm.reset();
     taskModel.style.display = 'none'
 }
-tableEl.addEventListener("click", onDel);
-function onDel(e) {
-    if (!e.target.classList.contains("delet")) {
-        return;
-    }
-    const btn = e.target;
-    btn.closest('tr').remove();
-}
+
