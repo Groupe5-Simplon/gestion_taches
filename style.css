@@ -84,6 +84,7 @@ button:hover{
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+/* 
 .tableau_global {
   margin: 50px;
   margin-left: 10px;
@@ -108,8 +109,8 @@ button:hover{
 }
 .tableau tbody {
   color: #0c0b0b;
-}
-/* table{
+} */
+table{
     text-align: center;
     width: 75%;
     margin-left: 12.5%;
@@ -124,6 +125,14 @@ td {
     color: white;  
     font-weight: bold; 
 }
+.g{
+  background : transparent;
+  width: 9%;
+}
+.btn{
+  background-color: red;
+}
+/* 
 .ion-icon{
     font-size: px;
     font-weight: bold;

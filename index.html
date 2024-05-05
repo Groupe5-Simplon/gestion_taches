@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Gestion de tâches</h1>
+        <h1>Gestion des tâches</h1>
         <button id="addTaskBtn">Ajouter une tâche</button>
     </header>
     <div id="taskModel" class="model">
@@ -41,8 +41,22 @@
             </form>
         </div>
     </div>
+    <table id="tableau">
+        <thead>
+            <tr>
+                <th>Titre</th>
+                <th>Description</th>
+                <th>Date Limite</th>
+                <th>État d'avancement</th>
+                <th>Priorité</th>
+            </tr>
+        </thead>
+        <tbody>
 
-    <section class="tableau_global">
+        </tbody>
+        
+    </table>
+    <!-- <section class="tableau_global">
         <table class="tableau" id="table">
             <thead>
                 <tr>
@@ -59,7 +73,7 @@
             <tbody id="body_tab"></tbody>
         </table>
             
-    </section>
+    </section> -->
 
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
