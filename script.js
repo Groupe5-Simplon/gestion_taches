@@ -60,7 +60,7 @@ function onAdd(e) {
             <td>${priorite}</td>
             <td>${Etat}</td>
             <td class="g"><button class="btn delet" type="submit">Suprimer</button></td>
-            <td class="g"><button class="btn modi"  type="submit">Mpdofier</button></td>
+            <td class="g"><button class="btn modi"  type="submit">Modofier</button></td>
         </tr>
     `
     taskForm.reset();
