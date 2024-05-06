@@ -30,7 +30,7 @@ function onAdd(e) {
             <td>${priorite}</td>
             <td>${Etat}</td>
             <td class="g"><button type="submit" class="icon_click" onclick="editData(this)"><ion-icon name='pencil-outline' class="icon">"+"</ion-icon></button></td>
-            <td class="g"><button type="submit" class="icon_click2" onclick="done(this)><ion-icon name="checkmark-done-outline" class="icon"></ion-icon></button></td>
+            <td class="g"><button type="submit" class="icon_click2" onclick="done(this)"><ion-icon name="checkmark-done-outline" class="icon">"+"</ion-icon></button></td>
         </tr>
     `
     taskForm.reset();
@@ -68,5 +68,25 @@ function editData(button) {
     etatCell.innerHTML = etatInput; 
     prioriteCell.innerHTML = prioriteInput;
 }
+function done(button) {  
+    let row = button.parentNode.parentNode; 
+    
+    let titreCell = row.cells[0]; 
+    let descriptCell = row.cells[1]; 
+    let dateCell = row.cells[2]; 
+    let etatCell = row.cells[3]; 
+    let prioriteCell = row.cells[4]
+ 
+    let titreInput = titreCell.innerHTML ='Done';
+    let descriptInput = descriptCell.innerHTML= 'Done' ; 
+    let dateInput = dateCell.innerHTML='Done'; 
+    let etatInput = etatCell.innerHTML = 'Done';
+    let prioriteInput = prioriteCell.innerHTML = 'Done';  
 
+    titreCell.innerHTML = titreInput; 
+    descriptCell.innerHTML = descriptInput; 
+    dateCell.innerHTML = dateInput; 
+    etatCell.innerHTML = etatInput; 
+    prioriteCell.innerHTML = prioriteInput;
+}
 
