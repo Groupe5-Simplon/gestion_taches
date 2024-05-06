@@ -77,11 +77,11 @@ function done(button) {
     let etatCell = row.cells[3]; 
     let prioriteCell = row.cells[4]
  
-    let titreInput = titreCell.innerHTML='Done';
-    let descriptInput = descriptCell.innerHTML= 'Done' ; 
-    let dateInput = dateCell.innerHTML='Done'; 
-    let etatInput = etatCell.innerHTML = 'Done';
-    let prioriteInput = prioriteCell.innerHTML = 'Done';  
+    let titreInput = "<del>"+titreCell.innerHTML+"</del>";
+    let descriptInput ="<del>"+descriptCell.innerHTML+"</del>"; 
+    let dateInput ="<del>"+ dateCell.innerHTML+"</del>"; 
+    let etatInput ="<del>"+ etatCell.innerHTML +"</del>";
+    let prioriteInput ="<del>"+ prioriteCell.innerHTML +"</del>";  
 
     titreCell.innerHTML = titreInput; 
     descriptCell.innerHTML = descriptInput; 
