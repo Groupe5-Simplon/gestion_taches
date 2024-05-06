@@ -29,11 +29,44 @@ function onAdd(e) {
             <td>${datel}</td>
             <td>${priorite}</td>
             <td>${Etat}</td>
-            <td class="g"><button type="submit" class="icon_click"><ion-icon name='pencil-outline' class="icon">"+"</ion-icon></button></td>
-            <td class="g"><button type="submit" class="icon_click2"><ion-icon name="checkmark-done-outline" class="icon"></ion-icon></button></td>
+            <td class="g"><button type="submit" class="icon_click" onclick="editData(this)"><ion-icon name='pencil-outline' class="icon">"+"</ion-icon></button></td>
+            <td class="g"><button type="submit" class="icon_click2" onclick="done(this)><ion-icon name="checkmark-done-outline" class="icon"></ion-icon></button></td>
         </tr>
     `
     taskForm.reset();
     taskModel.style.display = 'none'
 }
+function editData(button) {  
+    let row = button.parentNode.parentNode; 
+    let titreCell = row.cells[0]; 
+    let descriptCell = row.cells[1]; 
+    let dateCell = row.cells[2]; 
+    let etatCell = row.cells[3]; 
+    let prioriteCell = row.cells[4]
+ 
+    let titreInput = 
+        prompt("Entrez le nouveau titre:", 
+            titreCell.innerHTML); 
+    let descriptInput = 
+        prompt("Entrez la nouvelle description:", 
+            descriptCell.innerHTML); 
+    let dateInput = 
+        prompt("Entrez la nouvelle date:", 
+            dateCell.innerHTML 
+        ); 
+    let etatInput = 
+        prompt("Entrez le nouveau état:", 
+            etatCell.innerHTML 
+        );
+    let prioriteInput = 
+        prompt("Entrez la nouvelle priorité:", 
+            prioriteCell.innerHTML 
+        );  
+    titreCell.innerHTML = titreInput; 
+    descriptCell.innerHTML = descriptInput; 
+    dateCell.innerHTML = dateInput; 
+    etatCell.innerHTML = etatInput; 
+    prioriteCell.innerHTML = prioriteInput;
+}
+
 
