@@ -94,8 +94,8 @@ table {
   text-align: center;
   width: 1000px;
   margin-left: 12.5%;
-    margin-top: 15vh;
-    border-collapse: collapse;
+  margin-top: 15vh;
+  border-collapse: collapse;
 }
 th{
     border: 1px solid black;
@@ -126,4 +126,32 @@ td {
 }
 .icon_click2 {
   background-color: rgba(68, 96, 255, 0.274);
+}
+@media(max-width:1200px){
+  table {
+    text-align: center;
+    width: 75%;
+    margin-left: 5.5%;
+    margin-top: 15vh;
+    border-collapse: collapse;
+    margin-right: 12.5%;
+  } 
+  th{
+    border: 1px solid black;
+    height: 40px;
+    font-size: 13.5px;
+  }
+  .model{
+    width: 400px;
+    height: 100%;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .model h1 {
+    font-size: 25px;
+  }
+  td {
+    font-size: 12px;
+  }
 }

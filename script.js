@@ -77,7 +77,7 @@ function done(button) {
     let etatCell = row.cells[3]; 
     let prioriteCell = row.cells[4]
  
-    let titreInput = titreCell.innerHTML ='Done';
+    let titreInput = titreCell.innerHTML='Done';
     let descriptInput = descriptCell.innerHTML= 'Done' ; 
     let dateInput = dateCell.innerHTML='Done'; 
     let etatInput = etatCell.innerHTML = 'Done';
